@@ -24,32 +24,32 @@ function getComputerChoice() {
 
 // A function that plays a single round of Rock Paper Scissors.
 function playRound(playerSelection, computerSelection) {
-  let lowercasePlayerSelection = playerSelection.toLowerCase();
-  if (lowercasePlayerSelection === "rock" && computerSelection === "paper") {
+  let playerSelection = playerSelection.toLowerCase();
+  if (playerSelection === "rock" && computerSelection === "paper") {
     computerScore++;
     return ("You lose! Paper beats Rock.");
   }
-  else if (lowercasePlayerSelection === "rock" && computerSelection === "scissors") {
+  else if (playerSelection === "rock" && computerSelection === "scissors") {
     playerScore++;
     return ("You win! Rock beats Scissors.");
   }
-  else if (lowercasePlayerSelection === "paper" && computerSelection === "scissors") {
+  else if (playerSelection === "paper" && computerSelection === "scissors") {
     computerScore++;
     return ("You lose! Scissors beats Paper.");
   }
-  else if (lowercasePlayerSelection === "paper" && computerSelection === "rock") {
+  else if (playerSelection === "paper" && computerSelection === "rock") {
     playerScore++;
     return ("You win! Paper beats Rock.");
   }
-  else if (lowercasePlayerSelection === "scissors" && computerSelection === "rock") {
+  else if (playerSelection === "scissors" && computerSelection === "rock") {
     computerScore++;
     return ("You lose! Rock beats Scissors.");
   }
-  else if (lowercasePlayerSelection === "scissors" && computerSelection === "paper") {
+  else if (playerSelection === "scissors" && computerSelection === "paper") {
     playerScore++;
     return ("You win! Scissors beats Paper.");
   }
-  else if (lowercasePlayerSelection === computerSelection) {
+  else if (playerSelection === computerSelection) {
     return ("Tie! Nobody wins nor loses.")
   }
   else {
