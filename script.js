@@ -24,7 +24,7 @@ function getComputerChoice() {
 
 // A function that plays a single round of Rock Paper Scissors.
 function playRound(playerSelection, computerSelection) {
-  let playerSelection = playerSelection.toLowerCase();
+  playerSelection = playerSelection.toLowerCase();
   if (playerSelection === "rock" && computerSelection === "paper") {
     computerScore++;
     return ("You lose! Paper beats Rock.");
